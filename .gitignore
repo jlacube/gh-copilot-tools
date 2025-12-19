@@ -883,4 +883,5 @@ Thumbs.db
 .github/copilot/
 .copilot/
 
-
+# Coding Buddy and the like memory folder
+.github/buddy/
