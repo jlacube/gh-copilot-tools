@@ -201,9 +201,11 @@ All agents share:
 ## Installation & Usage
 
 ### Prerequisites
-- Visual Studio Code
+- Visual Studio Code 1.106+ (for custom agents)
 - GitHub Copilot extension
-- Access to Claude 4.5/Sonnet models (for agents)
+- **GitHub Copilot Pro, Pro+, Business, or Enterprise** (required for Claude Sonnet 4.5 and advanced models)
+  - Free tier does NOT include Claude Sonnet 4.5
+  - See [GitHub Copilot Plans](https://docs.github.com/en/copilot/about-github-copilot/plans-for-github-copilot) for model availability
 
 ### Setup
 
@@ -220,18 +222,27 @@ cp gh-copilot-tools/.github/copilot-instructions.md your-project/.github/
 GitHub Copilot automatically reads `.github/copilot-instructions.md` as context.
 
 #### 2. Agent Configurations
-Agent files are VS Code chat agent configurations. To use:
+Agent files are VS Code custom agent configurations (`.agent.md` format). To use:
 
-1. Ensure you have access to Claude 4.5/Sonnet through your VS Code/GitHub Copilot setup
-2. Copy desired agent file(s) to your project's `.github/agents/` directory
-3. Reference the agent in VS Code GitHub Copilot chat
+1. Copy desired agent file(s) to your project's `.github/agents/` directory:
+   ```bash
+   # Copy specific agent
+   cp gh-copilot-tools/.github/agents/coding-buddy-1.3-sonnet4.5-mcp.agent.md your-project/.github/agents/
+   
+   # Or copy all agents
+   cp gh-copilot-tools/.github/agents/*.agent.md your-project/.github/agents/
+   ```
 
-Example chat invocation:
-```
-@coding-buddy implement user authentication with JWT tokens
-@spec-architect help me design a microservices architecture
-@retro-spec analyze the legacy codebase in src/legacy/
-```
+2. VS Code automatically detects `.agent.md` files in `.github/agents/`
+
+3. **Switch to agent via agent picker dropdown**:
+   - Open Chat view (Ctrl+Alt+I / Cmd+Option+I)
+   - Click the agent picker dropdown (shows current agent name)
+   - Select your custom agent from the list
+
+4. Submit prompts as normal - the selected agent's instructions and tools apply automatically
+
+**Note:** Custom agents require VS Code 1.106+ and GitHub Copilot extension.
 
 ### Configuration
 
