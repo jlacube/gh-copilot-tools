@@ -360,10 +360,10 @@ To create new agents:
 
 ## Support
 
-For issues, questions, or contributions, please [open an issue](https://github.com/yourusername/gh-copilot-tools/issues) on GitHub.
+For issues, questions, or contributions, please [open an issue](https://github.com/jlacube/gh-copilot-tools/issues) on GitHub.
 
 ---
 
 **Generated**: 2025-12-19T23:36:01Z  
 **Version**: 1.0.0  
-**Maintained By**: [Your Name/Organization]
+**Maintained By**: [Jerome Lacube]
