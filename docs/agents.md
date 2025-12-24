@@ -317,11 +317,13 @@ Ongoing documentation maintenance system for keeping reverse-engineered specific
 - Sequential fetch strategy: overview → specific docs → alternatives → common issues
 
 ### Comprehensive Logging
-All agents maintain detailed logs (where applicable):
+All agents maintain detailed logs (where applicable) in `.github/buddy/` directory:
 - `thinking_log.md`: All reasoning processes with timestamps and thinking budgets
 - `research_log.md`: All fetch operations, queries, URLs, findings with timestamps
 - `execution_log.md`: All code execution results with timestamps
 - `progress.md`: Real-time TODO lists updated throughout execution
+
+**Note**: The buddy directory is automatically created by agents and is typically gitignored.
 
 ### Quality Enforcement
 - **Timestamp Enforcement**: ISO 8601 format on all entries

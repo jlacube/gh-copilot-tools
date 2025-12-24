@@ -39,10 +39,9 @@ Agent files are VS Code custom agent configurations (`.agent.md` format). To use
    
    # Or copy all agents
    cp gh-copilot-tools/.github/agents/*.agent.md your-project/.github/agents/
-   
-   # Optionally create buddy directory for agent logs
-   mkdir -p your-project/.github/buddy
    ```
+
+   **Note**: The `.github/buddy/` directory for agent logs is automatically created when agents run. Add it to your `.gitignore` if you don't want to track log files.
 
 2. VS Code automatically detects `.agent.md` files in `.github/agents/`
 

@@ -22,21 +22,16 @@ This repository provides:
 .github/
 ├── copilot-instructions.md          # Primary coding standards (Python, JS/TS)
 ├── copilot-instructions-full.md     # Extended coding standards
-├── agents/                          # Agent configuration files
-│   ├── idea-scout-1.0.agent.md
-│   ├── spec-architect-1.0.agent.md
-│   ├── spec-validator-1.0.agent.md
-│   ├── tech-radar-1.0.agent.md
-│   ├── spec-kitty-buddy-1.0.agent.md
-│   ├── coding-buddy-1.3.agent.md
-│   ├── retro-spec-architect-1.0.agent.md
-│   ├── retro-spec-validator-1.0.agent.md
-│   └── spec-steward-1.0.agent.md
-└── buddy/                           # Working directory for agent logs
-    ├── thinking_log.md
-    ├── research_log.md
-    ├── progress.md
-    └── context.md
+└── agents/                          # Agent configuration files
+    ├── idea-scout-1.0.agent.md
+    ├── spec-architect-1.0.agent.md
+    ├── spec-validator-1.0.agent.md
+    ├── tech-radar-1.0.agent.md
+    ├── spec-kitty-buddy-1.0.agent.md
+    ├── coding-buddy-1.3.agent.md
+    ├── retro-spec-architect-1.0.agent.md
+    ├── retro-spec-validator-1.0.agent.md
+    └── spec-steward-1.0.agent.md
 docs/                                # Documentation
 ├── agents.md                        # Agent descriptions
 ├── workflows.md                     # Workflow scenarios
@@ -65,6 +60,8 @@ cp gh-copilot-tools/.github/agents/*.agent.md your-project/.github/agents/
 # Or copy specific agent
 cp gh-copilot-tools/.github/agents/coding-buddy-1.3.agent.md your-project/.github/agents/
 ```
+
+**Note**: Agents automatically create a `.github/buddy/` directory for logs when needed (gitignored).
 
 ### 4. Use in VS Code
 - Open Chat view (Ctrl+Alt+I / Cmd+Option+I)
