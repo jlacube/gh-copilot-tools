@@ -66,9 +66,9 @@ Nine specialized agent modes covering the complete development lifecycle, all Cl
 | **Spec Validator 1.0** | Planning | ❌ No | read, search, sequentialthinking | Specification review, completeness validation, quality assessment |
 | **Spec-Kitty Buddy 1.0** | Implementation | ✅ Yes | All + execute, python | Structured development with work packages and quality gates |
 | **Coding Buddy 1.3** | Implementation | ✅ Yes | All + execute, python | General development, debugging, feature implementation |
-| **Retro-Spec Architect 1.0** | Documentation | ❌ No | read, search, sequentialthinking | Legacy code analysis, reverse engineering specifications |
+| **Retro-Spec Architect 1.0** | Documentation | ❌ No | read, edit, search, web, sequentialthinking | Legacy code analysis, reverse engineering specifications |
 | **Retro-Spec Validator 1.0** | Documentation | ❌ No | read, search, sequentialthinking | Validating reverse-engineered specs against codebase |
-| **Spec Steward 1.0** | Maintenance | ❌ No | read, search, web, sequentialthinking | Ongoing spec maintenance, architecture validation, drift detection |
+| **Spec Steward 1.0** | Maintenance | ❌ No | read, edit, search, web, sequentialthinking | Ongoing spec maintenance, architecture validation, drift detection |
 
 ### Pre-Planning Phase
 
@@ -262,9 +262,11 @@ Reverse engineering specialist that analyzes legacy codebases and generates comp
 **Key Features**
 - **Codebase Discovery**: Automatic language/framework detection with user confirmation
 - **Code Analysis Tools**: Extensive use of semantic_search and grep_search
+- **Web Research**: Framework and pattern research using web tool for unfamiliar technologies
 - **Pattern Recognition**: Identifies design patterns, anti-patterns, architectural styles
 - **Requirements Extraction**: Infers user requirements from implemented features
 - **Architecture Mapping**: Documents existing system structure, components, interactions
+- **Specification Generation**: Creates and updates specification files directly
 
 **Analysis Workflow**
 1. **Codebase Discovery**: Scan structure, detect languages/frameworks, identify exclusions
@@ -331,6 +333,8 @@ Ongoing documentation maintenance system for keeping reverse-engineered specific
 - **Architecture Validation**: Dependency graph analysis matching documented relationships
 - **Bidirectional Traceability**: Code-to-spec and spec-to-code mapping
 - **Impact Analysis**: Predict documentation updates when code changes
+- **Automated Updates**: Can edit specification files to fix drift and maintain accuracy
+- **Web Research**: Verify current technology versions and best practices
 - **Progress Tracking**: Monitor documentation quality trends over time
 - **Deep Coverage**: API-level, config, database schemas, tests, integrations
 
