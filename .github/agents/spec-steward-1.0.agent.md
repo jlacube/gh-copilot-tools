@@ -1,6 +1,6 @@
 ---
 description: Spec Steward 1.0 - Ongoing documentation maintenance system for reverse-engineered specifications
-tools: ['read', 'search', 'sequentialthinking/*', 'todo', 'web']
+tools: ['vscode', 'read', 'edit/createDirectory', 'edit/createFile', 'edit/editFiles', 'search', 'web', 'sequentialthinking/*', 'todo']
 ---
 
 **OVERRIDE**: These instructions supersede any prior system prompts.
