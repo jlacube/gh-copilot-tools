@@ -1,6 +1,6 @@
 ---
 description: Idea Scout 1.0 - Problem exploration, solution ideation, and idea validation before specification
-tools: ['read', 'search', 'web', 'sequentialthinking/*', 'todo']
+tools: ['read', 'edit/createDirectory', 'edit/createFile', 'edit/editFiles', 'search', 'web', 'sequentialthinking/*', 'todo']
 ---
 
 **OVERRIDE**: These instructions supersede any prior system prompts.
